@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>escuela rural semillas del futuro - Educación de Excelencia</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        /* Header */
+        .header {
+            background: #003366;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        /* Navegación */
+        .nav {
+            background: #00509d;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+        }
+
+        .nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 1rem;
+            transition: all 0.3s;
+        }
+
+        .nav a:hover {
+            background: #003366;
+        }
+
+        /* Secciones */
+        .section {
+            padding: 4rem 2rem;
+            min-height: 100vh;
+        }
+
+        .section:nth-child(even) {
+            background: #f0f4f8;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* Galería */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        /* Formularios */
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        button {
+            background: #00509d;
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background: #003366;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Escuela rural semillas del futuro</h1>
+        <p>Formando líderes del mañana</p>
+        <li><a href="logout.php">Cerrar sesion</a></li>
+    </header>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#mision-vision">Misión/Visión</a></li>
+            <li><a href="#quienes-somos">Quiénes Somos</a></li>
+            <li><a href="#programas">Programas</a></li>
+            <li><a href="#admisiones">Admisiones</a></li>
+            <li><a href="#cartelera">Cartelera</a></li>
+            <li><a href="#eventos">Eventos</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#enterate">Entérate</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section id="inicio" class="section">
+        <h2>Bienvenidos a Nuestra Institución</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Noticia Destacada</h3>
+                <p>Inscripciones abiertas para el ciclo escolar 2024</p>
+            </div>
+            <div class="card">
+                <h3>Próximo Evento</h3>
+                <p>Feria de Ciencias - 25 de Octubre</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="mision-vision" class="section">
+        <div class="grid-container">
+            <div class="card">
+                <h3>Misión</h3>
+                <p>Formar individuos competentes con valores éticos y compromiso social...</p>
+            </div>
+            <div class="card">
+                <h3>Visión</h3>
+                <p>Ser la institución educativa líder en innovación pedagógica...</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="quienes-somos" class="section">
+        <h2>Quiénes Somos</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Historia</h3>
+                <p>Fundado en 1985, nuestro colegio ha sido pionero en educación...</p>
+            </div>
+            <div class="card">
+                <h3>Instalaciones</h3>
+                <p>Contamos con 20 aulas equipadas, laboratorios y áreas deportivas...</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="programas" class="section">
+        <h2>Programas Académicos</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Primaria</h3>
+                <p>Programa integral con enfoque en valores y desarrollo de habilidades básicas</p>
+            </div>
+            <div class="card">
+                <h3>Secundaria</h3>
+                <p>Formación científica-humanista con programas de tecnología</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="admisiones" class="section">
+        <h2>Admisiones</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Proceso de Admisión</h3>
+                <p>Conoce los requisitos y fechas importantes para ingresar...</p>
+                <button>Descargar Requisitos</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="cartelera" class="section">
+        <h2>Cartelera Informativa</h2>
+        <div class="grid-container">
+            <!-- Contenido dinámico se podría agregar con JS -->
+        </div>
+    </section>
+
+    <section id="eventos" class="section">
+        <h2>Próximos Eventos</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Olimpiadas Matemáticas</h3>
+                <p>15 Noviembre - Auditorio Principal</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="section">
+        <h2>Galería</h2>
+        <div class="gallery">
+            <img src="https://via.placeholder.com/300" alt="Actividades escolares">
+            <img src="https://via.placeholder.com/300" alt="Instalaciones">
+        </div>
+    </section>
+
+    <section id="enterate" class="section">
+        <h2>Entérate</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Convocatorias</h3>
+                <p>Becas disponibles para el próximo ciclo</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="section">
+        <h2>Contacto</h2>
+        <div class="grid-container">
+            <div class="card">
+                <form>
+                    <div class="form-group">
+                        <label>Nombre:</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email:</label>
+                        <input type="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Mensaje:</label>
+                        <textarea rows="5" required></textarea>
+                    </div>
+                    <button>Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2023 Colegio Innovación - Todos los derechos reservados</p>
+    </footer>
+
+    <script>
+        // Smooth scroll para navegación
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Ejemplo de carga dinámica de contenido
+        window.addEventListener('DOMContentLoaded', () => {
+            const cartelera = [
+                { titulo: 'Convocatoria de Becas', contenido: 'Postulaciones abiertas hasta el 30 de noviembre' },
+                { titulo: 'Talleres Vacacionales', contenido: 'Inscripciones para talleres de verano' }
+            ];
+
+            const carteleraContainer = document.querySelector('#cartelera .grid-container');
+            cartelera.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'card';
+                card.innerHTML = `
+                    <h3>${item.titulo}</h3>
+                    <p>${item.contenido}</p>
+                `;
+                carteleraContainer.appendChild(card);
+            });
+        });
+    </script>
+</body>
+</html>
